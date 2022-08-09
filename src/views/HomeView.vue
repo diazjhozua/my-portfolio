@@ -1,15 +1,20 @@
 <template>
-  <hello-world />
+  <main>
+    <on-boarding></on-boarding>
+    <hello-world />
+  </main>
 </template>
 
 <script>
 import HelloWorld from "../components/HelloWorld";
+import OnBoarding from "../components/OnBoarding";
 
 export default {
-  name: "Home",
+  name: "HomeView",
 
   components: {
     HelloWorld,
+    OnBoarding,
   },
 };
 </script>
