@@ -1,20 +1,23 @@
 <template>
   <main>
-    <on-boarding></on-boarding>
+    <hero-section></hero-section>
+    <tech-stack></tech-stack>
     <hello-world />
   </main>
 </template>
 
 <script>
 import HelloWorld from "../components/HelloWorld";
-import OnBoarding from "../components/OnBoarding";
+import HeroSection from "../components/HeroSection";
+import TechStack from "../components/TechStack";
 
 export default {
   name: "HomeView",
 
   components: {
     HelloWorld,
-    OnBoarding,
+    HeroSection,
+    TechStack,
   },
 };
 </script>
