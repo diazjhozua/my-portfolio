@@ -3,30 +3,27 @@
     <h3 class="text-center text-subtitle-2 mb-4 font-weight-bold grey--text">
       TECH STACK
     </h3>
-    <horizontal-scroll>
-      <div class="d-flex">
-        <figure
-          v-for="(stack, index) in techStack"
-          :key="index"
-          class="mx-9 d-flex flex-column"
-        >
-          <v-icon size="100">{{ stack.icon }}</v-icon>
-          <figcaption class="text-center text-overline grey--text">
-            {{ stack.text }}
-          </figcaption>
-        </figure>
-      </div>
-    </horizontal-scroll>
+    <vue-horizontal responsive :button="true" class="mx-10 horizontal">
+      <figure
+        v-for="(stack, index) in techStack"
+        :key="index"
+        class="d-flex flex-column"
+      >
+        <v-icon size="100">{{ stack.icon }}</v-icon>
+        <figcaption class="text-center text-overline grey--text">
+          {{ stack.text }}
+        </figcaption>
+      </figure>
+    </vue-horizontal>
   </section>
 </template>
 
 <script>
-import HorizontalScroll from "vue-horizontal-scroll";
-import "vue-horizontal-scroll/dist/vue-horizontal-scroll.css";
+import VueHorizontal from "vue-horizontal";
 
 export default {
   components: {
-    HorizontalScroll,
+    VueHorizontal,
   },
 
   data() {

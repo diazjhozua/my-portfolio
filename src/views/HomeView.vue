@@ -2,6 +2,7 @@
   <main>
     <hero-section></hero-section>
     <tech-stack></tech-stack>
+    <about-me></about-me>
     <hello-world />
   </main>
 </template>
@@ -10,6 +11,7 @@
 import HelloWorld from "../components/HelloWorld";
 import HeroSection from "../components/HeroSection";
 import TechStack from "../components/TechStack";
+import AboutMe from "../components/AboutMe";
 
 export default {
   name: "HomeView",
@@ -18,6 +20,7 @@ export default {
     HelloWorld,
     HeroSection,
     TechStack,
+    AboutMe,
   },
 };
 </script>
