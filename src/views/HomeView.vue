@@ -5,6 +5,7 @@
     <about-me></about-me>
     <education-work></education-work>
     <involved-projects></involved-projects>
+    <footer-section></footer-section>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import TechStack from "../components/TechStack";
 import AboutMe from "../components/AboutMe";
 import EducationWork from "../components/EducationWork";
 import InvolvedProjects from "@/components/InvolvedProjects.vue";
+import FooterSection from "@/components/FooterSection.vue";
 
 export default {
   name: "HomeView",
@@ -24,6 +26,7 @@ export default {
     AboutMe,
     EducationWork,
     InvolvedProjects,
+    FooterSection,
   },
 };
 </script>

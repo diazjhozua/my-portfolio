@@ -1,7 +1,6 @@
 <template>
   <section class="terminal px-sm-15 mb-10">
     <v-shell
-      style="width: inherit !important"
       :banner="banner"
       :shell_input="send_to_terminal"
       :commands="commands"

@@ -1,7 +1,9 @@
 <template>
   <section class="mt-16">
     <v-container>
-      <h2 class="text-h5 text-sm-h3">Education & Work Timeline</h2>
+      <h2 class="text-h5 text-sm-h3 text-center mb-10">
+        Education & Work Timeline
+      </h2>
       <v-timeline :dense="$vuetify.breakpoint.smAndDown">
         <v-timeline-item
           v-for="(experience, index) in experiences"

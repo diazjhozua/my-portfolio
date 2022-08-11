@@ -62,7 +62,7 @@
             </v-btn>
 
             <v-btn
-              href="https://www.facebook.com/diazjhozua/t"
+              href="https://www.facebook.com/diazjhozua/"
               target="_blank"
               text
               plain
