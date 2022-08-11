@@ -1,6 +1,6 @@
 <template>
   <main>
-    <hero-section></hero-section>
+    <hero-section ref="myRef"></hero-section>
     <tech-stack></tech-stack>
     <about-me></about-me>
     <education-work></education-work>

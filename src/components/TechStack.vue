@@ -1,6 +1,9 @@
 <template>
   <section class="mt-5 mb-5">
-    <h3 class="text-center text-subtitle-2 mb-4 font-weight-bold grey--text">
+    <h3
+      class="text-center text-subtitle-2 mb-4 font-weight-bold grey--text"
+      id="about"
+    >
       TECH STACK
     </h3>
     <vue-horizontal responsive :button="true" class="mx-10 horizontal">

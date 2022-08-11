@@ -35,6 +35,7 @@
             >
             <v-btn
               outlined
+              href="#about"
               color="red darken-4"
               class="white--text my-2 mx-2"
               large

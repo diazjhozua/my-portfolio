@@ -4,12 +4,10 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import VueTypedJs from "vue-typed-js";
-import shell from "vue-shell";
 
 Vue.config.productionTip = false;
 
 Vue.use(VueTypedJs);
-Vue.use(shell);
 
 new Vue({
   router,

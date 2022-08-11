@@ -1,18 +1,34 @@
 <template>
   <section class="terminal px-sm-15 mb-10">
-    <v-shell
-      :banner="banner"
-      :shell_input="send_to_terminal"
-      :commands="commands"
-      @shell_output="prompt"
-    ></v-shell>
+    <v-responsive class="pa-2">
+      <div class="text-center text-body-2 mb-12"></div>
+
+      <v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: 0.5,
+        }"
+        min-height="200"
+        transition="fade-transition"
+      >
+        <v-shell
+          :banner="banner"
+          :shell_input="send_to_terminal"
+          :commands="commands"
+          @shell_output="prompt"
+        ></v-shell>
+      </v-lazy>
+    </v-responsive>
   </section>
 </template>
 
 <script>
+import shell from "vue-shell";
+
 export default {
   data() {
     return {
+      isActive: false,
       send_to_terminal: "info",
       banner: {
         header: "About Me",
@@ -71,6 +87,7 @@ export default {
       ],
     };
   },
+  components: { "v-shell": shell },
   methods: {
     prompt(value) {
       if (value == "node -v") {
