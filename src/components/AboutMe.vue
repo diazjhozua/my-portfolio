@@ -88,6 +88,6 @@ export default {
 .terminal {
   background-color: black;
   width: 100% !important;
-  height: 440px;
+  min-height: 440px;
 }
 </style>
