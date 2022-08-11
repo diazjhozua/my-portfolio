@@ -94,14 +94,13 @@ export default {};
 
 <style scoped>
 .hero-section {
-  min-height: 460px;
+  min-height: 560px;
 }
 
 .hero-img-box {
   position: relative;
-
   width: 100%;
-  height: 320px;
+  height: 420px;
 }
 
 .hero-img-box img {
