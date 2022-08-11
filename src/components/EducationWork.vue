@@ -1,11 +1,8 @@
 <template>
-  <section style="height: 600px">
+  <section class="mt-16">
     <v-container>
       <h2 class="text-h5 text-sm-h3">Education & Work Timeline</h2>
-
       <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-        <!-- Start Junior High -->
-
         <v-timeline-item
           v-for="(experience, index) in experiences"
           :key="index"
@@ -20,58 +17,60 @@
           <template v-slot:opposite>
             <span>{{ experience.year }}</span>
           </template>
-          <v-card class="elevation-2 px-6">
-            <v-row>
-              <v-col cols="12" md="10">
-                <div class="text-h6 font-weight-bold">
-                  {{ experience.title }}
+          <v-hover v-slot="{ hover }">
+            <v-card class="px-6" :elevation="hover ? 5 : 2">
+              <v-row>
+                <v-col cols="12" md="10">
+                  <div class="text-h6 font-weight-bold">
+                    {{ experience.title }}
 
-                  <span v-if="$vuetify.breakpoint.smAndDown"
-                    >({{ experience.year }})</span
-                  >
-                </div>
-
-                <div
-                  v-if="experience.pointers && experience.pointers.length > 0"
-                >
-                  <ul
-                    v-for="(pointer, index) in experience.pointers"
-                    :key="index"
-                  >
-                    <li class="text-subtitle-2 font-weight-medium">
-                      {{ pointer }}
-                    </li>
-                  </ul>
-                </div>
-
-                <v-expansion-panels
-                  v-if="experience.jobRoles && experience.jobRoles.length > 0"
-                  flat
-                >
-                  <v-expansion-panel>
-                    <v-expansion-panel-header
-                      class="text-subtitle-2 font-weight-normal"
+                    <span v-if="$vuetify.breakpoint.smAndDown"
+                      >({{ experience.year }})</span
                     >
-                      View Job Description
-                    </v-expansion-panel-header>
-                    <v-expansion-panel-content>
-                      <ul
-                        v-for="(role, index) in experience.jobRoles"
-                        :key="index"
+                  </div>
+
+                  <div
+                    v-if="experience.pointers && experience.pointers.length > 0"
+                  >
+                    <ul
+                      v-for="(pointer, index) in experience.pointers"
+                      :key="index"
+                    >
+                      <li class="text-subtitle-2 font-weight-medium">
+                        {{ pointer }}
+                      </li>
+                    </ul>
+                  </div>
+
+                  <v-expansion-panels
+                    v-if="experience.jobRoles && experience.jobRoles.length > 0"
+                    flat
+                  >
+                    <v-expansion-panel>
+                      <v-expansion-panel-header
+                        class="text-subtitle-2 font-weight-normal"
                       >
-                        <li class="text-subtitle-2 font-weight-medium">
-                          {{ role }}
-                        </li>
-                      </ul>
-                    </v-expansion-panel-content>
-                  </v-expansion-panel>
-                </v-expansion-panels>
-              </v-col>
-              <v-col class="hidden-sm-and-down text-right" md="2">
-                <v-icon large> {{ experience.icon }} </v-icon>
-              </v-col>
-            </v-row>
-          </v-card>
+                        View Job Description
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        <ul
+                          v-for="(role, index) in experience.jobRoles"
+                          :key="index"
+                        >
+                          <li class="text-subtitle-2 font-weight-medium">
+                            {{ role }}
+                          </li>
+                        </ul>
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+                  </v-expansion-panels>
+                </v-col>
+                <v-col class="hidden-sm-and-down text-right" md="2">
+                  <v-icon large> {{ experience.icon }} </v-icon>
+                </v-col>
+              </v-row>
+            </v-card>
+          </v-hover>
         </v-timeline-item>
       </v-timeline>
     </v-container>
