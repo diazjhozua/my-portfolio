@@ -19,7 +19,6 @@
         <v-tab @click="navigate(1)"> About Me </v-tab>
         <v-tab @click="navigate(2)"> Experience </v-tab>
         <v-tab @click="navigate(3)"> Projects </v-tab>
-        <v-tab @click="navigate(4)"> Hire Me </v-tab>
       </v-tabs>
     </v-app-bar>
     <hero-section ref="hero" @smoothScroll="navigate(1)"></hero-section>

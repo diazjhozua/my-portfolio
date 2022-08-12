@@ -30,7 +30,12 @@
           </p>
 
           <div class="d-flex">
-            <v-btn color="red darken-4" class="white--text my-2 mx-2" large
+            <v-btn
+              color="red darken-4"
+              href="https://www.linkedin.com/in/diazjhozua/"
+              target="_blank"
+              class="white--text my-2 mx-2"
+              large
               >Hire me</v-btn
             >
             <v-btn
