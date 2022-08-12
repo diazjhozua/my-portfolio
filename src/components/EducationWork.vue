@@ -1,7 +1,7 @@
 <template>
-  <section class="mt-16">
+  <section class="mt-16 mb-16">
     <v-container>
-      <h2 class="text-h5 text-sm-h3 text-center mb-10">
+      <h2 class="text-h5 text-sm-h3 text-center mb-10 mt-16">
         Education & Work Timeline
       </h2>
       <v-timeline :dense="$vuetify.breakpoint.smAndDown">
@@ -23,7 +23,7 @@
             <v-card class="px-6" :elevation="hover ? 5 : 2">
               <v-row>
                 <v-col cols="12" md="10">
-                  <div class="text-h6 font-weight-bold">
+                  <div class="text-subtitle-1 text-sm-h6 font-weight-bold">
                     {{ experience.title }}
 
                     <span v-if="$vuetify.breakpoint.smAndDown"
@@ -67,7 +67,7 @@
                     </v-expansion-panel>
                   </v-expansion-panels>
                 </v-col>
-                <v-col class="hidden-sm-and-down text-right" md="2">
+                <v-col class="text-right" md="2">
                   <v-icon large> {{ experience.icon }} </v-icon>
                 </v-col>
               </v-row>

@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-5 mb-5">
+  <section class="mt-5 mb-16">
     <h3
       class="text-center text-subtitle-2 mb-4 font-weight-bold grey--text"
       id="about"

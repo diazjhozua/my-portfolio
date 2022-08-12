@@ -1,6 +1,12 @@
 <template>
   <v-footer padless>
-    <v-card flat tile class="red darken-4 white--text text-center" width="100%">
+    <v-card
+      flat
+      tile
+      color="#b71c1c"
+      class="white--text text-center"
+      width="100%"
+    >
       <v-card-text>
         <v-btn
           class="mx-4 white--text"
