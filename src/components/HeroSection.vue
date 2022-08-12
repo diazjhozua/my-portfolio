@@ -13,7 +13,7 @@
           <vue-typed-js
             :typeSpeed="100"
             :loop="true"
-            :strings="['a Developer', 'a Tutoree', 'an Engineer']"
+            :strings="['a Developer', 'a Tutoree']"
           >
             <h1 class="text-h4 text-sm-h3 font-weight-bold mt-5">
               I'm

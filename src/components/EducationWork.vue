@@ -172,7 +172,8 @@ export default {
         },
         {
           year: "Present",
-          title: "Information Services (IS) Engineer at Trend Micro Inc.",
+          title:
+            "Associate Information Services (IS) Engineer at Trend Micro Inc.",
           icon: "mdi-briefcase",
           avatar: require("../assets/experience/trendmicro.png"),
         },
