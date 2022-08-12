@@ -1,7 +1,7 @@
 <template>
-  <section class="mt-16 mb-16">
+  <section class="mt-16 mb-16" id="about">
     <v-container>
-      <h2 class="text-h5 text-sm-h3 text-center mb-10 mt-16">
+      <h2 class="text-h5 text-sm-h3 font-weight-bold text-center mb-10 mt-16">
         Education & Work Timeline
       </h2>
       <v-timeline :dense="$vuetify.breakpoint.smAndDown">

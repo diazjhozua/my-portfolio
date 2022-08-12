@@ -1,13 +1,13 @@
 <template>
   <section class="mt-16 mb-16 pb-16">
     <v-container>
-      <h2 class="text-h5 text-sm-h3 text-center">Projects</h2>
+      <h2 class="text-h5 text-sm-h3 text-center font-weight-bold">Projects</h2>
 
       <vue-horizontal responsive scroll :button="false" class="horizontal">
         <v-card
           v-for="(project, index) in projects"
           :key="index"
-          class="d-flex flex-column my-12 mx-4"
+          class="d-flex flex-column my-12 mx-sm-4 mx-lg-auto"
           min-width="300"
         >
           <!-- <v-img height="250" contain :src="project.image"></v-img> -->
@@ -36,7 +36,12 @@
                 v-for="(link, index) in project.links"
                 :key="index"
               >
-                <v-btn color="grey darken-4" :href="link.href" text>
+                <v-btn
+                  color="grey darken-4"
+                  :href="link.href"
+                  target="“_blank”"
+                  text
+                >
                   <v-icon>{{ link.icon }}</v-icon>
                   {{ link.label }}
                 </v-btn>
@@ -108,8 +113,8 @@ export default {
           links: [],
         },
         {
-          title: "My Expense Tracker",
-          subTitle: "Expense",
+          title: "My Expense",
+          subTitle: "Expense Tracker App",
           associated: "Sample Project",
           image: require("../assets/closed-sign.png"),
           description:
@@ -118,12 +123,12 @@ export default {
             {
               icon: "mdi-github",
               label: "API",
-              href: "https://github.com/diazjhozua/eSerbisyoAndroid",
+              href: "https://github.com/diazjhozua/my-expense-api",
             },
             {
               icon: "mdi-github",
               label: "Web",
-              href: "https://github.com/diazjhozua/my-expense-api",
+              href: "https://github.com/diazjhozua/my-expense-web",
             },
             {
               icon: "mdi-web",
@@ -150,8 +155,8 @@ export default {
 }
 
 .horizontal >>> .v-hl-container::-webkit-scrollbar {
-  height: 16px;
-  width: 16px;
+  height: 10px;
+  width: 4px;
   background: transparent;
 }
 

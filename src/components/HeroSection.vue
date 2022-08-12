@@ -35,11 +35,12 @@
             >
             <v-btn
               outlined
-              href="#about"
+              @click="learnHandler"
               color="red darken-4"
               class="white--text my-2 mx-2"
               large
-              >Learn more
+            >
+              Learn more
             </v-btn>
           </div>
 
@@ -90,7 +91,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    learnHandler() {
+      this.$emit("smoothScroll");
+    },
+  },
+};
 </script>
 
 <style scoped>
