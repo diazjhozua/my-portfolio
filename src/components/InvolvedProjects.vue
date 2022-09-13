@@ -7,7 +7,7 @@
         <v-card
           v-for="(project, index) in projects"
           :key="index"
-          class="d-flex flex-column my-12 mx-sm-4 mx-lg-auto"
+          class="d-flex flex-column my-12 mx-sm-4 mx-xl-auto"
           min-width="300"
         >
           <!-- <v-img height="250" contain :src="project.image"></v-img> -->
